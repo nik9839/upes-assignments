@@ -1,4 +1,6 @@
 //Question 3
+//Abhishek Dutta
+//B.Tech CSE CCVT 4th Year, UPES Dehradun
 
 import java.util.*;
 public class question3 {
