@@ -1,4 +1,4 @@
-//This program finds the product of the greatest common divisors(gcd) of all possible subsets of an array.The time complexity of this program is O(n^2).  
+//This program finds the product of the greatest common divisors(gcd) of all possible subsets of an array.  
 
 #include<stdio.h>
 
