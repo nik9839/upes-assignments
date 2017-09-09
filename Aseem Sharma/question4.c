@@ -48,7 +48,7 @@ int findgcd(int A[], int i,int j)
 			int g=gcd(A[i],A[i+1]);
 			for(int k=i+2;k<=j;k++)
 			{
-				int g=gcd(g,A[k]);
+				int g=gcd(g,A[k]);    //recursive call to the function gcd().
 			}
 			return g;
 		}
@@ -64,7 +64,7 @@ void subset(int A[],int n)
 	{
 		for(int j=i;j<n;j++)
 		{
-		  g*=findgcd(A,i,j);	
+		  g*=findgcd(A,i,j);	             //Call to the function findgcd().
 		}
 
 	}
