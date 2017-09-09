@@ -1,5 +1,5 @@
 
-//This program calculates the best route for an Uber driver to follow. It returns 1 if the driver should follow the route through X and 2 if the driver should follow the route through Y. It will return -1 if none of X or Y should be followed. The time complexity of this program is O(n).
+//This program calculates the best route for an Uber driver to follow. It returns 1 if the driver should follow the route through X and 2 if the driver should follow the route through Y. It will return -1 if none of X or Y should be followed.
 
 
 #include<stdio.h>
@@ -48,7 +48,7 @@ int main()
 {
 	int ac=0,axb=0,ayb=0;
 	int a[2],b[2],c[2],x[2],y[2];
-	scanf("%d",&a[0]);
+	scanf("%d",&a[0]);               //Taking inoput for all the coordinates.
 	scanf("%d",&a[1]);
 	scanf("%d",&b[0]);
 	scanf("%d",&b[1]);
@@ -63,7 +63,7 @@ int main()
 	axb=ac+distance(c,x)+distance(x,b);
 	ayb=ac+distance(c,y)+distance(y,b);
 
-	int p=pickup(ab,axb,ayb);
+	int p=pickup(ab,axb,ayb);         //Call to function pickup().
 	printf("%d\n",p);
 }
 
