@@ -1,9 +1,9 @@
 #include <iostream>
 #include<string.h>
 using namespace std;
-#define num 1000000007
+#define num 1000000007 						//10^9+7
 
-long long int gcdcal(long long int x,long long int y)
+long long int gcdcal(long long int x,long long int y)				//calculate gcd
 {
 	
 	while(x!=y)
@@ -17,8 +17,8 @@ long long int gcdcal(long long int x,long long int y)
 	
 }
 int main() {
-	long long int t,n,prod,a,res,i,j,arr[100001],k;
-	cin>>t;
+	long long int t,n,prod,a,res,i,j,arr[100001],k;			
+	cin>>t;	
 	while(t>0)
 	{
 		memset(arr,0,sizeof(arr));
@@ -27,9 +27,9 @@ int main() {
 		for(i=0;i<n;i++)
 		{
 		cin>>arr[i];
-		prod=(prod*arr[i])%num;
+		prod=(prod*arr[i])%num;				//Individual set have gcd equal to their own value
 		}
-		for(i=0;i<n;i++)
+		for(i=0;i<n;i++)					//Generate all sets
 		{	
 			
 			for(j=i+1;j<n;j++)
@@ -45,7 +45,7 @@ int main() {
 				break;
 				}
 
-			prod=(prod*res)%num;	
+			prod=(prod*res)%num;			//Product won't exceed 10^9+7
 			}
 			
 			
