@@ -16,7 +16,7 @@ public class QuestionThree {
 	 * @return updated listL with elements from i to n in reversed order
 	 */
 	static int[] reverse(int[] listL, int i, int n) {
-		int[] temp = new int[n];
+		int[] temp = new int[n];                  //temporary array of same length to store altered array
 		int pointer = n-1;
 		
 		/* 
@@ -27,7 +27,7 @@ public class QuestionThree {
 		}
 
 		/* 
-		 * reverse values from i to n-1
+		 * reverse values order from i to n-1
 		 */
 		for(int j=i; j < n; j++){
 			temp[j] = listL[pointer--];
@@ -48,7 +48,7 @@ public class QuestionThree {
 
 	static int[] addA(int[] listL, int i, int n, int A) {
 		for(int j = i; j < n; j++){
-			listL[j] = (listL[j] + A);
+			listL[j] = (listL[j] + A);              // Add A to each element from i to n-1
 		}
 		return listL;
 	}
@@ -63,7 +63,7 @@ public class QuestionThree {
 	 */
 	static int[] multiplyWithB(int[] listL, int i, int n, int B) {
 		for(int j = i; j < n; j++){
-			listL[j] = listL[j] * B;
+			listL[j] = listL[j] * B;			    // Multiply each element from i to n-1 with B
 		}
 		return listL;
 	}
@@ -78,7 +78,7 @@ public class QuestionThree {
 	 */
 	static int[] moduleByC(int[] listL, int i, int n, int C) {
 		for(int j = i; j < n; j++){
-			listL[j] = listL[j] % C;
+			listL[j] = listL[j] % C;               // Take modulus of each element in the range i to n-1
 		}
 		return listL;
 	}
@@ -94,7 +94,7 @@ public class QuestionThree {
 	 */
 	static void AncientAlgorith(int[] listL, String str, int a, int b, int c, int n) {
 		for(int i = 0; i < n; i++){
-			switch(str.charAt(i)){
+			switch(str.charAt(i)){                 // Check for each character in given string and perform operation character wise
 				case 'R' : listL = reverse(listL, i, n);
 						   break;
 				case 'A' : listL = addA(listL, i , n, a);
@@ -113,19 +113,19 @@ public class QuestionThree {
 
 
 	/**
-	 * This is the main method which makes use of Ancient Algorithm to impress my girlFriend
+	 * This is the main method which makes use of method AncientAlgorithm to impress my girlFriend
 	 * 
 	 * @param args Unused
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter (T) number of test cases :");
-		int t = sc.nextInt();      // accepts number of test cases need to be performed
+		int t = sc.nextInt();                         // accepts number of test cases need to be performed
 		
 		for(int j = 0; j < t; j++){
 			
 			System.out.println("Enter value of N (length of array)");
-			int N = sc.nextInt();      // accepts length of array
+			int N = sc.nextInt();                     // accepts length of array
 			int[] listL = new int[N];
 			
 			System.out.println("Enter array of "+N+" elements");
@@ -143,8 +143,7 @@ public class QuestionThree {
 			System.out.println("Enter string");
 			String str = sc.next().toUpperCase();
 			
-			
-			AncientAlgorith(listL, str, a, b, c, N);  // call function for each test case
+			AncientAlgorith(listL, str, a, b, c, N);   // call function for each test case
 		}
 		
 		sc.close();
