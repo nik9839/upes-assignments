@@ -1,7 +1,3 @@
-//Question 3
-//Abhishek Dutta
-//B.Tech CSE CCVT 4th Year, UPES Dehradun
-
 import java.util.*;
 public class question3 {
 
@@ -36,12 +32,22 @@ public class question3 {
 			{
 			     if(ch[i] == 'R') //Incase R encountered, reverse the ArrayList
 			    	 {
-			    		 Collections.reverse(L);
+			    	 	int start, end;
+			    	 	int x = i, y = N-1;
+			    	 	while(x < y)
+			    	 	{
+			    	 		start = L.get(x);
+			    	 		end = L.get(y);
+			    	 		L.set(x, start);
+			    	 		L.set(y, end);
+			    	 		x++;
+			    	 		y--;
+			    	 	} 		    		 
 			    	 }
 			     
 			   	 else if(ch[i] == 'A') //Incase A encountered, add A to each element
 			    	 {			    	 
-			    	 	for(int x=0;x<L.size();x++)
+			    	 	for(int x=i;x<L.size();x++)
 			    	 	{
 			    	 		L.set(x, L.get(x)+A);
 			    	 	} 	
@@ -49,7 +55,7 @@ public class question3 {
 			     
 		    	 else if(ch[i] == 'M') //Incase M encountered, multiply each element by B
 		    	 	{			    	 
-			    	 for(int x=0;x<L.size();x++)
+			    	 for(int x=i;x<L.size();x++)
 			    	 	{
 			    	 		L.set(x, L.get(x)*B);
 			    	 	}			    	 
