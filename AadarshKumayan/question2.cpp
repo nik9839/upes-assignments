@@ -29,7 +29,7 @@ int main()
 		x+=r[i]-y;
 		y=r[i];
 	}
-	else if(y>c[i])
+	else if(y>c[i])						//check if driver is late and request is not service return -1
 	{
 		cout<<-1<<endl;
 		flag=1;
