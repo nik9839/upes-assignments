@@ -66,7 +66,7 @@ public class Q3 {
            {
               list1[z]=list1[z]%c; 
            }        
-           hold[qq]=list1;
+           
           // printing
            for(int p=0;p<n;p++)
             {  
