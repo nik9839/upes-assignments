@@ -1,3 +1,9 @@
+/**
+ * The QuestionFour implements GCD to find the product of GCD's of all possible subsets
+ * of an given array
+ * 
+ * @author Harsh Mathur
+ */
 import java.util.*;
 public class QuestionFour {
 	
