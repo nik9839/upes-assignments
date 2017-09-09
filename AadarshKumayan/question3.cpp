@@ -22,12 +22,12 @@
     	  	else if(s[i]=='A')
     		{
     			for(j=i;j<n;j++)
-    			arr[j]+=arr1[0];
+    			arr[j]=(arr[j]%arr1[2])+(arr1[0]%arr1[2])%arr1[2];
     		}	
     	  	else if(s[i]=='M')
     		{
     			for(j=i;j<n;j++)
-    			arr[j]*=arr1[1];
+    			arr[j]=(arr[j]%arr1[2])*(arr1[1]%arr1[2])%arr1[2];
     		}	
     	  }
      
