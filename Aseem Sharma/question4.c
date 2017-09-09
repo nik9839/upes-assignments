@@ -78,8 +78,8 @@ void subset(int A[],int n)
 void main()
 { 
 	int t,n,A[1000];
-	scanf("%d",&t);
-	for(int i=0;i<t;i++)
+	scanf("%d",&t);                        //Entering number of test cases 
+	for(int i=0;i<t;i++)		       //This loop will execute for t test cases
 	{
 		scanf("%d",&n);
 		for(int i=0;i<n;i++)
