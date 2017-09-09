@@ -2,11 +2,12 @@ import sys
 from collections import deque
 
 
+
 def main():
-    """ linear complexity using maths and deque library """        
     
-
-
+    """ linear complexity using maths and deque library
+    """        
+  
     # number of test cases
     T = int(input())
 
@@ -19,7 +20,7 @@ def main():
         L = deque(input().split())
         
         # three space seperated integer
-        A,B,C = map(int,input().split())
+        A,B,C = map(int, input().split())
         
         # string S as input
         S = input()
@@ -45,10 +46,12 @@ def main():
             elif op == 'M':
                 # multiplication flag
                 mul = mul * B % C
+                
                 # multiplication flag for addition flag
                 add = add * B % C
 
             # using deque for constant complexity of popping on both side
+            # deleting the first/last element depending on Rflag, we dont need to manipulate it further
             if Rflag:
                 v = int(L.popleft())
             else:
