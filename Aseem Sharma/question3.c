@@ -19,14 +19,14 @@ void reverse(int L[],int n,int i)
 //'L' is an array that contains a list of integers
 //'a','b','c' are integer variables
 //variable 'n' is the size of the list
-//variable 't' denotes no of test cases  
+//variable 't' denotes number of test cases  
 int main()
 {
 	int L[1000];
 	int a,b,c,n,t;
 	char s[1000];
-	scanf("%d",&t);                //Entering no of test cases
-	for(int i=0;i<t;i++)	       //This loop will execute for t no of test cases	
+	scanf("%d",&t);                //Entering number of test cases
+	for(int i=0;i<t;i++)	       //This loop will execute for t number of test cases	
 	{	
 		scanf("%d",&n);        //Entering the size of list L
 		for(int i=0;i<n;i++)
@@ -59,7 +59,7 @@ int main()
 
 		for(int i=0;i<n;i++)
 		{
-			L[i]=L[i]%c;  				   //Moduling all the values of 'L' by 'c'
+			L[i]=L[i]%c;  				   //Modulus of all the values of 'L' by 'c'
 		}
 		for(int i=0;i<n;i++)
 		{
