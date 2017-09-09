@@ -1,11 +1,11 @@
-//This program implements an algorithm of a magic trick.The time complexity of this program is O(n^3).
+//This program implements an algorithm of a magic trick.
 
 #include<stdio.h>
 #include<string.h>
 //This is a function to reverse an array from index i to n
 void reverse(int L[],int n,int i)
 {
-	while(i<n-1)
+	while(i<n-1)                   //The loop executes for index i to n-1
 	{
 		int temp=L[i];
 		L[i]=L[n-1];
@@ -25,10 +25,10 @@ int main()
 	int L[1000];
 	int a,b,c,n,t;
 	char s[1000];
-	scanf("%d",&t);
-	for(int i=0;i<t;i++)
+	scanf("%d",&t);                //Entering no of test cases
+	for(int i=0;i<t;i++)	       //This loop will execute for t no of test cases	
 	{	
-		scanf("%d",&n);
+		scanf("%d",&n);        //Entering the size of list L
 		for(int i=0;i<n;i++)
 		{
 			scanf("%d",&L[i]);
