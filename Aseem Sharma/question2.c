@@ -10,7 +10,7 @@ int timetaken(int tt[],int rt[],int ct[],int n)
 {
 	int t=0;
 	int curtime=0;
-	for(int i=0;i<=n;i++)
+	for(int i=0;i<=n+1;i++)
 	{
 		if(curtime+tt[i]<=rt[i])
 		{
