@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 class DevasenaQues4{
 
 	/*******************FastReader Template***************************/
-	//the methds of this calss will be used for any input in this program 
+	//the methods of this class will be used for any input in this program 
 	//considering the faster operations time when compared to Scanner or BufferedReader classes
     static class FastReader{
         BufferedReader br;
