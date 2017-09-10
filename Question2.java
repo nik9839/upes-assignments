@@ -1,4 +1,3 @@
-package mypro;
 
 import java.util.Scanner;
 
