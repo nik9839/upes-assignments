@@ -57,7 +57,7 @@ class DevasenaQues4{
  /****************** END OF TEMPLATE **********************/
 
  /*******************Actual Program************************/
- //The following program is a Brute Force implementation of the given scenario
+ //The following program is a direct implementation of the given scenario
  // further it can be optimized to reduce the time complexity of overall execution
 
  //defining global variables for operation in subseqent functions
