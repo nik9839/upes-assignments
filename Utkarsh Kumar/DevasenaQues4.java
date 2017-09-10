@@ -85,7 +85,7 @@ class DevasenaQues4{
  	List<Integer> subSet;
  	
  	//now performing the calculation of all the subsets based on the fact 
- 	//that every subset is analogous to the biinary numbers from 0 to 15
+ 	//that every subset is analogous to the binary numbers from 0 to 15
  	//algorithm performs the validation of all 2^n subsets
 	for(int i = 0; i < (1<<n); i++){
  		subSet = new ArrayList<Integer>();
