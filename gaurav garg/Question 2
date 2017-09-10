@@ -1,0 +1,57 @@
+// gaurav garg
+
+#include<stdio.h>
+
+int journeyFunction(int n ,int travelTime[],int readyTime[], int cancelTime[]){
+int journeyTime=0;
+for(int i=0;i<n;i++){
+   if(i==n-1){
+       if(journeyTime <= readyTime[i])
+     {  
+         journeyTime=readyTime[i];
+         
+     }
+      else if(journeyTime>readyTime[i] && journeyTime<=cancelTime[i]){
+          
+      }
+      
+      else return -1;        
+    }
+  
+   if(i<n-1){
+      
+     if(journeyTime<=readyTime[i]) 
+      {
+      
+       journeyTime=readyTime[i]+travelTime[i] ;
+      }
+     else if(journeyTime>readyTime[i] && journeyTime<=cancelTime[i])
+      {   
+         
+          journeyTime +=travelTime[i];
+          
+      }
+     else return -1;
+  }
+}
+
+ return journeyTime;
+
+}
+int main(){
+int n;
+scanf("%d",&n);
+int travelTime[n-1],cancelTime[n],readyTime[n];
+for(int i=0;i<n-1;i++){
+    scanf("%d",&travelTime[i]);
+}
+for(int j=0;j<n;j++){
+    scanf("%d",&readyTime[j]);
+}
+for(int k=0;k<n;k++){
+    scanf("%d",&cancelTime[k]);
+}
+
+printf("%d",journeyFunction(n,travelTime,readyTime,cancelTime));
+
+}
