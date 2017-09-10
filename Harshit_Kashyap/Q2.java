@@ -14,9 +14,10 @@ public class Q2
 {
 	 public static void main(String dt[])
     {
-		try{
-			
+		
 			Scanner sc=new Scanner(System.in);
+			
+		try{
 	   
 			//input number of customers-
 			

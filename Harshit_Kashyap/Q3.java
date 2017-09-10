@@ -20,12 +20,12 @@ class Q3{
 		InputStreamReader isr;
 		BufferedReader br;
 		
-		
+		isr=new InputStreamReader(System.in);
+		br=new BufferedReader(isr);
 		
 		try{
 		
-		isr=new InputStreamReader(System.in);
-		br=new BufferedReader(isr);
+		
 		
 		//input number of test cases
 		

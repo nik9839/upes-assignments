@@ -37,7 +37,7 @@ class Q4{
 				
 				int[] intArray=new int[number];
 				String[] arr=(br.readLine()).split(" ");
-				for(int i=0;i<umber;i++){
+				for(int i=0;i<number;i++){
 				intArray[i]=Integer.parseInt(arr[i]);
 			}
 			
