@@ -28,11 +28,7 @@ ODP is an open web based debate portal, where registered users can start debatin
 -  Debate List should be searchable
 
 ### Assignment Details:
--  Draw and Application Architecture for the Debate Portal
+-  Draw the Application Architecture for the Debate Portal
 -  Class diagram for the Application
 -  Draw an ER schema OR Database Schema OR Database Diagrams
 -  Draw a Class Structure OR UML diagram
--  Clearly write all the possible functions or API definition
--  Draw a workflow OR flowchart for the application
--  Prototype the Application GUI
--  Project plan and timelines are worked upon
