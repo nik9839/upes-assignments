@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <math.h>
+int gcd(int a, int b)
+{
+    if (a == 0)
+        return b;
+    return gcd(b%a, a);
+}
+
+int gcdArray(int arr[], int n)
+{  
+    int result = arr[0];
+    for (int i=1; i<n; i++)
+        result = gcd(arr[i], result);
+ 
+    return result;
+}
+ 
+void calculate(int *set, int set_size)
+{
+    unsigned int pow_set_size = pow(2, set_size);
+    int counter, j;
+    unsigned long long int gcd=1;
+    for(counter = 0; counter < pow_set_size; counter++)
+    {
+      int arr[set_size];
+      int p=0;
+      for(j = 0; j < set_size; j++)
+       {  
+          if(counter & (1<<j))
+            {arr[p++]=set[j];
+                
+            }
+            
+       }
+          
+      gcd=gcd*gcdArray(arr,p); 
+    }
+       printf("%llu\n",gcd%1000000007);    
+    
+    
+}
+
+void getGCD(){
+        
+        int n;
+        scanf("%d",&n);
+        int set[n];
+        for(int j=0;j<n;j++){
+            scanf("%d",&set[j]);
+        }
+       calculate(set,n);
+} 
+
+int main(){ 
+    int t;
+    scanf("%d",&t);
+    for(int i=0;i<t;i++){
+       
+        getGCD();
+      
+    }
+   
+    return  0;
+}
