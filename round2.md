@@ -31,4 +31,4 @@ ODP is an open web based debate portal, where registered users can start debatin
 -  Draw the Application Architecture for the Debate Portal
 -  Class diagram for the Application
 -  Draw an ER schema OR Database Schema OR Database Diagrams
--  Draw a Class Structure OR UML diagram
+-  Draw a Use Case Diagram
